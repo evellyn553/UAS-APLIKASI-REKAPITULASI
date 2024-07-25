@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Data Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- My CSS -->
+     <link rel="stylesheet" href="Css/style-tambahdata.css">
+    <!-- <link rel="stylesheet" href="css/style-tambahdata.css"> -->
+
+</head>
+
+<body class="vh-100">
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-lg-2 vh-100 sidebar">
+                <div class="d-flex align-items-center p-3 mb-4">
+                    <img src="Images/avatar-3.png" alt="logo" class="logo">
+                    <div class="text-white">
+                        <h4>Nama Dosen</h4>
+                        <p>Nomor Induk Dosen</p>
+                    </div>
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="dashboard.html">
+                            <img src="Images/home-dashboard.png" alt="">Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="tambahdata.html">
+                            <img src="Images/tambahdata.png" alt="">Tambah Data
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="rekapnilai.html">
+                            <img src="Images/rekapnilai.png" alt="">Rekap Nilai
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav flex-column">
+                    <li class="nav-item out">
+                        <a class="nav-link active" aria-current="page" href="login.html">
+                            <img src="Images/keluar.png" alt="">Keluar
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class="container col-md-10 ms-sm-auto col-lg-10 px-md-4 p-4">
+                <div class="box1 border">
+                    <h2>Semester - Genap TA. 2023/2024</h2>
+                </div>
+                <h1 class="text-black mt-5 mb-5">Tambah Data</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form class="form-left">
+                            <div class="form-group">
+                                <label for="formControlInput1" class="form-label">Nama</label>
+                                <input type="text" class="form-control mb-3" id="formControlInput1" placeholder="Masukkan Nama">
+                            </div>
+                            <div class="form-group">
+                                <label for="formControlInput2" class="form-label">NIM</label>
+                                <input type="text" class="form-control mb-3" id="formControlInput2" placeholder="Masukkan NIM">
+                            </div>
+                            <div class="form-group">
+                                <label for="formControlInput3" class="form-label">Kelas</label>
+                                <input type="text" class="form-control mb-3" id="formControlInput3" placeholder="Masukkan Kelas">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="form-right">
+                            <div class="form-group">
+                                <label for="formControlInput4" class="form-label">Mata Kuliah</label>
+                                <input type="text" class="form-control mb-3" id="formControlInput4" placeholder="Masukkan Mata Kuliah">
+                            </div>
+                            <div class="form-group">
+                                <label for="formControlInput5" class="form-label">Nilai</label>
+                                <input type="text" class="form-control mb-3" id="formControlInput5" placeholder="Masukkan Nilai">
+                            </div>
+                            <div class="d-flex justify-content-end button">
+                                <button type="button" class="btn btn-hapus mb-3 ml-3">Hapus</button>
+                                <button type="submit" class="btn btn-simpan mb-3">Simpan</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Tabel -->
+                <h1 class="text-black mt-5 mb-5">Data Terbaru</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>NIM</th>
+                            <th>Kelas</th>
+                            <th>Mata Kuliah</th>
+                            <th>Nilai</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>123456</td>
+                            <td>A</td>
+                            <td>Web Development</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>789012</td>
+                            <td>B</td>
+                            <td>Database Management</td>
+                            <td>92</td>
+                        </tr>
+                        <!-- Menambahkan baris lainnya sesuai kebutuhan -->
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
